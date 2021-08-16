@@ -95,7 +95,7 @@
                         foreach ($product_ids as $product_id) {
                             $product = wc_get_product($product_id);
                             ?>
-                            <option value="<?php echo $product_id; ?>" <?php selected($formMeta['wc_download_status']['woocommerce_product_id'], $product); ?>><?php echo $product->get_name(); ?></option>
+                            <option value="<?php echo $product_id; ?>" <?php selected($formMeta['wc_download_status']['woocommerce_product_id'], $product_id); ?>><?php echo $product->get_name(); ?></option>
                             <?php
                         }
                         ?>
